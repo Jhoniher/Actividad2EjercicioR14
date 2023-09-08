@@ -1,3 +1,4 @@
+//Calculo de salario por departamento
 import java.util.Scanner;
 public class EjercicioResuelto14 {
     public static void main(String[] args) {
@@ -12,11 +13,11 @@ public class EjercicioResuelto14 {
         System.out.println("Ingrese el salario para cada departamento: ");
         salario=entrada.nextDouble();
         totalVentas=ventaD1+ventaD2+ventaD3;
-        porcentaje=totalVentas*0.33;
+        porcentaje=totalVentas*0.33; //Se calcula el 33% sobre el total de ventas
         double devengado1=salario;
         double devengado2=salario;
         double devengado3=salario;
-        if(ventaD1>porcentaje){
+        if(ventaD1>porcentaje){ //Condicion para calcular el salario de cada departamento
             devengado1+=salario*0.20;
         }
         if(ventaD2>porcentaje){
